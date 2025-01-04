@@ -1,4 +1,5 @@
 import Aside from './containers/Aside'
+import ContactList from './containers/ContactList'
 import { Container, GlobalStyle } from './styles/GlobalStyle'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <Container>
       <GlobalStyle />
       <Aside />
+      <ContactList />
     </Container>
   )
 }
