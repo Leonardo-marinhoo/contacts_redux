@@ -13,7 +13,7 @@ body{
   color:white;
   font-family:"Poppins";
   overflow: hidden;
-  scrollbar-width: thin; /* Para Firefox */
+  scrollbar-width: thin;
   scrollbar-color: #444 #222;
 }
 body::-webkit-scrollbar {
@@ -21,17 +21,17 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #222; /* Cor do fundo da trilha */
+  background: #222;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #444; /* Cor do polegar (scroll) */
+  background-color: #444;
   border-radius: 4px;
-  border: 2px solid #222; /* Dá um efeito de separação entre trilha e polegar */
+  border: 2px solid #222;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Cor do polegar ao passar o mouse */
+  background-color: #555;
 }
 `
 type ContainerProps = {
