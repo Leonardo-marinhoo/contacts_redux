@@ -1,9 +1,15 @@
 import styled from 'styled-components'
 import variables from '../../styles/variables'
-import { IoMdNotificationsOutline, IoIosSearch } from 'react-icons/io'
+import { IoMdNotificationsOutline, IoIosSearch, IoIosAdd } from 'react-icons/io'
+import { HiOutlineArrowCircleLeft } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
+
+type ButtonProps = {
+  isEditing?: boolean
+}
 
 export const Aside = styled.aside`
-  min-width: 250px;
+  min-width: 16vw;
   width: 16vw;
   height: 100vh;
   border-right: 1px solid ${variables.border_color};
@@ -54,6 +60,7 @@ export const SearchInput = styled.input`
   background: transparent;
   border: none;
   outline: none;
+  color: white;
 `
 
 export const FilterList = styled.div`
@@ -61,4 +68,28 @@ export const FilterList = styled.div`
   flex-direction: column;
   margin-top: 2rem;
   gap: 0.8rem;
+`
+export const AddBtn = styled(Link)<ButtonProps>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${(props) =>
+    props.isEditing ? variables.secondary_dark_bg : variables.accent_color};
+  color: white;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+`
+export const AddIcon = styled(IoIosAdd)`
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+`
+export const BackIcon = styled(HiOutlineArrowCircleLeft)`
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
 `
