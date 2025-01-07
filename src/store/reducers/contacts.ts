@@ -23,7 +23,7 @@ const initialState: ContactState = {
       surname: 'Cunha',
       email: 'mail@gmail.com',
       phone: '129999999',
-      description: 'i dont know',
+      description: 'Unity C# Dev',
       tag: Tags.FAVORITE
     },
     {
